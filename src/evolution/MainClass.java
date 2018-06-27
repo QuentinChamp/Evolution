@@ -38,18 +38,13 @@ public class MainClass {
 				joueur.affichageBatimentJoueur();
 				break;
 			case 3 :
-		//		joueur.;
+				utilisationStock(sc, secteurs, joueur);
 				break;
+			
 			}
-
+			joueur.augmenterStock();
 			
 		}
-
-
-		
-		
-		
-		
 		
 		sc.close();
 	}
@@ -68,8 +63,92 @@ public class MainClass {
 				System.out.println("Votre réponse doit être comprise entre 1 et 3 ! è_é");
 		}while(choix<1 || choix>3);
 		return choix;
+		
+		
 	}
 
+	public static void utilisationStock(Scanner sc, Secteur[] secteurs,Joueur joueur) {
+		byte choix = 0;
+
+		do{
+		System.out.println("Que voulez-vous faire ?");
+		System.out.println("1- Soin");
+		System.out.println("2- Ameliorer");
+		System.out.println("3- Achat");
+		
+			choix = sc.nextByte();
+
+			if(choix<1 || choix>3)
+				System.out.println("Votre réponse doit être comprise entre 1 et 3 ! è_é");
+		}while(choix<1 || choix>3);
+		
+		if (choix == 1)
+		{
+			joueur.soin();
+		}
+		else if (choix == 2)
+		{
+			
+		}
+		else if (choix == 3)
+		{
+			menuAchat(sc, secteurs, joueur);
+		}
+	}
+	
+	private static void menuAchat(Scanner sc, Secteur[] secteurs, Joueur joueur) {
+		byte choix = 0, secteur = 0, ville = 0, batiment = 0;
+		boolean verif=false;
+
+		//cout de contruction
+		while(verif==false) {
+			do{
+				System.out.println("Choisissez un secteur :");
+				for(int i=0; i<secteurs.length;i++)
+					System.out.println(i+"- "+secteurs[i].getNom());
+
+				choix = sc.nextByte();
+				if(choix<0 || choix>=secteurs.length)
+					System.out.println("Votre réponse doit être comprise entre 0 et "+(secteurs.length-1)+" ! è_é");
+			}while(choix<0 || choix>=secteurs.length);
+			secteur = choix;
+
+			do{
+				System.out.println("Choisissez une ville  :");
+				for(int i=0; i<secteurs[secteur].getVille().length;i++)
+					System.out.println(i+"- "+secteurs[secteur].getVille()[i].getNom());
+
+				choix = sc.nextByte();
+				if(choix<0 || choix>=secteurs[secteur].getVille().length)
+					System.out.println("Votre réponse doit être comprise entre 0 et "+(secteurs[secteur].getVille().length-1)+" ! è_é");
+			}while(choix<0 || choix>=secteurs[secteur].getVille().length);
+			ville = choix;
+
+			do{
+				System.out.println("Choisissez un bâtiment à acheté:");
+				for(int i=0; i<secteurs[secteur].getVille()[ville].getBatiment().size();i++)
+					System.out.println(i+"- "+secteurs[secteur].getVille()[ville].getBatiment().get(i).getNom());
+
+				choix = sc.nextByte();
+				if(choix<0 || choix>=secteurs[secteur].getVille()[ville].getBatiment().size())
+					System.out.println("Votre réponse doit être comprise entre 0 et "+(secteurs[secteur].getVille()[ville].getBatiment().size()-1)+" ! è_é");
+			}while(choix<0 || choix>=secteurs[secteur].getVille()[ville].getBatiment().size());
+			batiment = choix;
+			
+			if (secteurs[secteur].getVille()[ville].getBatiment().get(batiment).getEtat().equals(joueur.getNom()))
+			{
+				verif=false;
+				System.out.println("Ce batiment est deja a vous ...");
+			}
+			else {
+				verif=true;
+				
+			}
+		}
+		joueur.augmenterStock();
+		
+	}
+	
 	private static Batiment menuAttaque(Scanner sc, Secteur[] secteurs, Joueur joueur) {
 		byte choix = 0, secteur = 0, ville = 0, batiment = 0;
 		boolean verif=false;

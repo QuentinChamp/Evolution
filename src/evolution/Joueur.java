@@ -21,6 +21,10 @@ public class Joueur {
 		this.nom = nom;
 		this.dps = dps;
 		this.vie = vie;
+		this.stockNourriture = 0;
+		this.stockHabitant = 0;
+		this.stockPierre = 0;
+		this.stockEnergie = 0;
 	}
 
 
@@ -52,6 +56,8 @@ public class Joueur {
 	public List<Batiment> getBatimentsJoueur() {
 		return batimentsJoueur;
 	}
+	
+	
 
 
 	public void gagnerBatimentsJoueur(Batiment batiment) {
@@ -77,6 +83,18 @@ public class Joueur {
 		}
 	}
 	
+	public void soin() {
+		
+		if(this.stockNourriture>10)
+		{
+		this.stockNourriture -= 10;
+		setVie(getVie()+50);
+		System.out.println("Votre vie est de = " + vie);
+		}
+		else
+			System.out.println("Vous n'avez pas assez de ressources");
+	}
+	
 	public void augmenterStock() {
 				
 		for (int i = 0 ; i <getBatimentsJoueur().size() ; i++)
@@ -85,6 +103,7 @@ public class Joueur {
 			{
 			case "NOURRITURE" :
 				this.stockNourriture += getBatimentsJoueur().get(i).getStock();
+				
 				break;
 			case "HABITANT" :
 				this.stockHabitant += getBatimentsJoueur().get(i).getStock();
@@ -97,17 +116,17 @@ public class Joueur {
 				break;
 			default :
 				break;
-			}		
-			
+			}	
+			System.out.println("+++++++++++++++++++++++++++++++");
+			System.out.println("Nourriture = " + this.stockNourriture);
+			System.out.println("Habitant = " + this.stockHabitant);
+			System.out.println("Pierre = " + this.stockPierre);
+			System.out.println("Ennergie = " + this.stockEnergie);
+			System.out.println("+++++++++++++++++++++++++++++++");
 		}
 		
 		
 	}
-	
-	public void utilisationStock() {
-		
-	}
-	
 	
 	
 }
