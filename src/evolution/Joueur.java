@@ -123,7 +123,7 @@ public class Joueur {
 		System.out.println("Nourriture = " + this.stockNourriture);
 		System.out.println("Habitant = " + this.stockHabitant);
 		System.out.println("Pierre = " + this.stockPierre);
-		System.out.println("Ennergie = " + this.stockEnergie);
+		System.out.println("Energie = " + this.stockEnergie);
 		System.out.println("+++++++++++++++++++++++++++++++");
 		
 	}

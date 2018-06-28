@@ -9,7 +9,7 @@ public class MainClass {
 
 		boolean win = true;
 		boolean jouer = true;
-		
+		Graph.aci();
 		intro();
 		Graph.evolutionIntro2();
 		Scanner sc = new Scanner(System.in);
@@ -59,7 +59,7 @@ public class MainClass {
 		
 			choix = sc.nextByte();
 			if(choix<1 || choix>3)
-				System.out.println("Votre réponse doit être comprise entre 1 et 3 ! è_é");
+				System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 1 et 3 ! ï¿½_ï¿½");
 		}while(choix<1 || choix>3);
 		return choix;
 		
@@ -78,7 +78,7 @@ public class MainClass {
 			choix = sc.nextByte();
 
 			if(choix<1 || choix>3)
-				System.out.println("Votre réponse doit être comprise entre 1 et 3 ! è_é");
+				System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 1 et 3 ! ï¿½_ï¿½");
 		}while(choix<1 || choix>3);
 		
 		if (choix == 1)
@@ -108,7 +108,7 @@ public class MainClass {
 
 				choix = sc.nextByte();
 				if(choix<0 || choix>=secteurs.length)
-					System.out.println("Votre réponse doit être comprise entre 0 et "+(secteurs.length-1)+" ! è_é");
+					System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 0 et "+(secteurs.length-1)+" ! ï¿½_ï¿½");
 			}while(choix<0 || choix>=secteurs.length);
 			secteur = choix;
 
@@ -119,18 +119,18 @@ public class MainClass {
 
 				choix = sc.nextByte();
 				if(choix<0 || choix>=secteurs[secteur].getVille().length)
-					System.out.println("Votre réponse doit être comprise entre 0 et "+(secteurs[secteur].getVille().length-1)+" ! è_é");
+					System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 0 et "+(secteurs[secteur].getVille().length-1)+" ! ï¿½_ï¿½");
 			}while(choix<0 || choix>=secteurs[secteur].getVille().length);
 			ville = choix;
 
 			do{
-				System.out.println("Choisissez un bâtiment à acheté:");
+				System.out.println("Choisissez un bï¿½timent ï¿½ achetï¿½:");
 				for(int i=0; i<secteurs[secteur].getVille()[ville].getBatiment().size();i++)
 					System.out.println(i+"- "+secteurs[secteur].getVille()[ville].getBatiment().get(i).getNom());
 
 				choix = sc.nextByte();
 				if(choix<0 || choix>=secteurs[secteur].getVille()[ville].getBatiment().size())
-					System.out.println("Votre réponse doit être comprise entre 0 et "+(secteurs[secteur].getVille()[ville].getBatiment().size()-1)+" ! è_é");
+					System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 0 et "+(secteurs[secteur].getVille()[ville].getBatiment().size()-1)+" ! ï¿½_ï¿½");
 			}while(choix<0 || choix>=secteurs[secteur].getVille()[ville].getBatiment().size());
 			batiment = choix;
 			
@@ -154,35 +154,35 @@ public class MainClass {
 
 		while(verif==false) {
 			do{
-				System.out.println("Choisissez un secteur à attaquer :");
+				System.out.println("Choisissez un secteur ï¿½ attaquer :");
 				for(int i=0; i<secteurs.length;i++)
 					System.out.println(i+"- "+secteurs[i].getNom());
 
 				choix = sc.nextByte();
 				if(choix<0 || choix>=secteurs.length)
-					System.out.println("Votre réponse doit être comprise entre 0 et "+(secteurs.length-1)+" ! è_é");
+					System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 0 et "+(secteurs.length-1)+" ! ï¿½_ï¿½");
 			}while(choix<0 || choix>=secteurs.length);
 			secteur = choix;
 
 			do{
-				System.out.println("Choisissez une ville à attaquer :");
+				System.out.println("Choisissez une ville ï¿½ attaquer :");
 				for(int i=0; i<secteurs[secteur].getVille().length;i++)
 					System.out.println(i+"- "+secteurs[secteur].getVille()[i].getNom());
 
 				choix = sc.nextByte();
 				if(choix<0 || choix>=secteurs[secteur].getVille().length)
-					System.out.println("Votre réponse doit être comprise entre 0 et "+(secteurs[secteur].getVille().length-1)+" ! è_é");
+					System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 0 et "+(secteurs[secteur].getVille().length-1)+" ! ï¿½_ï¿½");
 			}while(choix<0 || choix>=secteurs[secteur].getVille().length);
 			ville = choix;
 
 			do{
-				System.out.println("Choisissez un bâtiment à attaquer :");
+				System.out.println("Choisissez un bï¿½timent ï¿½ attaquer :");
 				for(int i=0; i<secteurs[secteur].getVille()[ville].getBatiment().size();i++)
 					System.out.println(i+"- "+secteurs[secteur].getVille()[ville].getBatiment().get(i).getNom());
 
 				choix = sc.nextByte();
 				if(choix<0 || choix>=secteurs[secteur].getVille()[ville].getBatiment().size())
-					System.out.println("Votre réponse doit être comprise entre 0 et "+(secteurs[secteur].getVille()[ville].getBatiment().size()-1)+" ! è_é");
+					System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 0 et "+(secteurs[secteur].getVille()[ville].getBatiment().size()-1)+" ! ï¿½_ï¿½");
 			}while(choix<0 || choix>=secteurs[secteur].getVille()[ville].getBatiment().size());
 			batiment = choix;
 			
@@ -282,7 +282,7 @@ public class MainClass {
 		Graph.evolutionIntro() ;
 		System.out.println("?");
 		try {Thread.sleep(2000);}catch (Exception e){}
-		System.out.println("Un jeu developpé par la team JAVA");
+		System.out.println("Un jeu developpï¿½ par la team JAVA");
 		try {Thread.sleep(2000);}catch (Exception e){}
 		System.out.println("Avec la participation de Ricard PREDATOR !!!");
 		System.out.println("\n\n\n\n");

@@ -17,7 +17,7 @@ public class Ville {
 		this.id=compteur;
 		this.nom = nom;
 		this.batiments = new ArrayList<Batiment>();
-		this.etat = etat;
+		this.etat = "";
 	}
 
 	public void addBatiment(Batiment batiment) // ajoute un batiment dans la ville
