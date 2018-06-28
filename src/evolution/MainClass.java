@@ -5,15 +5,13 @@ import java.util.Scanner;
 public class MainClass {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-		//title();
-
-		//intro();
+		intro();
+		
 		boolean win = true;
 		boolean jouer = true;
 		
-		intro();
+		//intro();
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Nom du joueur?");
@@ -21,7 +19,7 @@ public class MainClass {
 		
 		System.out.println("Bonjour " + pseudo);
 
-		Joueur joueur = new Joueur(pseudo, 20, 100);
+		Joueur joueur = new Joueur(pseudo, 30, 100);
 		Secteur secteurs[] = genererSecteurs();
 
 
@@ -33,6 +31,7 @@ public class MainClass {
 			{
 			case 1 :
 				win = menuAttaque(sc, secteurs, joueur).attaquer(joueur);
+				joueur.augmenterStock();
 				break;
 			case 2 :
 				joueur.affichageBatimentJoueur();
@@ -42,7 +41,7 @@ public class MainClass {
 				break;
 			
 			}
-			joueur.augmenterStock();
+			
 			
 		}
 		
@@ -145,7 +144,7 @@ public class MainClass {
 				
 			}
 		}
-		joueur.augmenterStock();
+		
 		
 	}
 	
@@ -280,7 +279,7 @@ public class MainClass {
 		try {Thread.sleep(2500);}catch (Exception e){}
 		System.out.println("...");
 		try {Thread.sleep(3000);}catch (Exception e){}
-		title();
+		Graph.evolutionIntro();
 		System.out.println("?");
 		try {Thread.sleep(2000);}catch (Exception e){}
 		System.out.println("Un jeu developpé par la team JAVA");
