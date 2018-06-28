@@ -11,6 +11,7 @@ public class MainClass {
 		boolean jouer = true;
 		
 		intro();
+		System.out.println("test 1.2");
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Nom du joueur?");
