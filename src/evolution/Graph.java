@@ -117,7 +117,58 @@ public class Graph {
 	System.out.println("      \\___\\\\__/ (___)(_)\\_) (__) (__)(_)\\_)"); 
 	 
 	  } 
-	   
+	   public static void poney(){
+		System.out.println("NNNNNNNNNNNNNNNNNNNXkkXNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNN0OXNNNNNNNXo..lKNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNO'.lKNNNNNXo.   cKNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNXc   'oOOxdl.    .:odk0XNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNK:     ..             .;oO00KXNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNXo                       ....'cONNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNKo.                           .oXNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNNNo.                           .lXNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNNXc                             .dNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNXo.                              ;0NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNk.                                ;xXNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNKc                                  :0NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNNO'                                  :KNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNN0,                                  .kNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNNx.                                   ;0NNNNNNNNNNNNNNNNNXKK00KXNXOkxxxkOKXNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNN0,                                    .dNNNNNNNNNNNX0xoc;'.....','.     ..':lkKNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNk,                                      :O0KKK0Oxdl:'.                         .lONNNNNNNNNNNN");
+		System.out.println("NNNNN0,                                        .......                                 .c0NNNNNNNNNN");
+		System.out.println("NNNNNXd,                                                                                 ;0NNNNNNNNN");
+		System.out.println("NNNNNNNKd'        .cl.                                                                    :KNNNNNNNN");
+		System.out.println("NNNNNNNNNKkoccclokKXo.                                                                    .oXNNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNN0;                                                                      ,0NNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNx.                                                                      .xNNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNXl                                                                        lXNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNK:                                                                        :KNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNN0;                                                                        ,0NNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNX:                                                                        'ONNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNd.                                                                       .ONNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNK;                                                                       .kNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNO,                                                                      .kNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNNk'                                                      .'             .xNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNNN0c.                                                  .l0l             .dNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNNNNXl                                                 .dXK;              oNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNNNNk'                  ............,;clxd'            .kNO'              lXNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNNNk'                   :OK000000KKXXNNNNNk'            ;Od.              lXNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNNk'        .;l.        'ONNNNNNNNNNNNNNNNN0;            ;;               cXNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNk'        ;xXNx.       .oNNNNNNNNNNNNNNNNNNx.           '.               cXNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNK;       .oKNNNXo.       'ONNNNNNNNNNNNNNNNNd.          .:.               ;KNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNWK;       'ONNNNNK:        ;0NNNNNNNNNNNNNNNXc           ;l.               .kNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNx.       'xXNNNNk.        ;0NNNNNNNNNNNNNNO'          .ol                .oNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNXl.       .oXNNNNx.        :KNNNNNNNNNNNNNo.          .kl                 ;KNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNNK:        ,0NNNNNo.        oXWNNNNNNNNNNO,           ,0O;. ''           .lKNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNNNO'       .:kXNNN0,        ;KWNNNNNNNNNKc            cXNXOxO0l.      .;d0NNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNNNNk.        .oXNNXc       .dXNNNNNNNNXx,             lNNNNNNNNOolooxOKNNNNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNNNNNx.        cXNXd.      .dXNNNNNNNXk,              ,ONNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNNNNNXx'      .kNKl.       lXNNNNNNNXd.             ;xKNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNNNNNNN0c.   .dXXl        .xNNNNNNNNXd'            .kWNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNNNNNNNNXOoloOXWO,        :0NNNNNNNNNNKOc.         'kNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNXkolccclokKNNNNNNNNNNNNNXOdc;'.',;oONNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+		System.out.println("NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNXKKXNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+	   }
 	   
 	
 
