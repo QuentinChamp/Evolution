@@ -25,73 +25,59 @@ public class Batiment {
 		this.etat = "";
 		genererMechants(this.mechants);
 	}
-
 	
 	public byte getId() {
 		return id;
 	}
 
-
 	public String getEtat() {
 		return etat;
 	}
-
 
 	public void setEtat(String etat) {
 		this.etat = etat;
 	}
 
-
 	public String getNom() {
 		return nom;
 	}
-
 
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
 
-
 	public List<Mechant> getMechants() {
 		return mechants;
 	}
-
 
 	public void setMechants(List<Mechant> mechants) {
 		this.mechants = mechants;
 	}
 
-
 	public int getStock() {
 		return stock;
 	}
-
 
 	public void setStock(int stock) {
 		this.stock = stock;
 	}
 
-
 	public int getVie() {
 		return vie;
 	}
-
 
 	public void setVie(int vie) {
 		this.vie = vie;
 	}
 
-
 	public Ressource getRessource() {
 		return ressource;
 	}
-
 
 	public void setRessource(Ressource ressource) {
 		this.ressource = ressource;
 	}
 
-	
 	public boolean attaquer(Joueur joueur)
 	{
 		int dps=0;
@@ -174,8 +160,6 @@ public class Batiment {
 		System.out.println("Defaite ! Tu as échoué dans la conquête de "+this.nom+" !\n\n");
 	}
 	
-	
-	
 	public int random(int min, int max) {
 		
 		return (int)(Math.random()*(max+1-min)+min);
@@ -193,6 +177,5 @@ public class Batiment {
 		mechants.add(yves);
 		mechants.add(paola);
 	}
-
 	
 }

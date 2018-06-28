@@ -1,18 +1,18 @@
 package evolution;
 
-/*import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;*/
+import java.util.Scanner;
 
 public class Secteur {
 
-	//private byte compteur=0;
+	private byte compteur=0;
 	private byte id;
 	private String nom;
 	private Ville[] villes;
 	
 	
-	/*public Secteur() 
+	public Secteur() 
 	{
 		compteur++;
 		this.id=compteur;
@@ -29,7 +29,7 @@ public class Secteur {
 		this.nom = nom;
 		this.villes = new Ville[5];
 		
-	}*/
+	}
 	
 	public int getID() {
 		return this.id;
@@ -51,10 +51,5 @@ public class Secteur {
 		this.villes[index] = villes;
 		
 	}
-
-
-	
-	// tableau secteur, tableau ville, list batiment
-	// tableau secteur dans le main avec une methode objectif
 	
 }

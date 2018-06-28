@@ -27,39 +27,30 @@ public class Joueur {
 		this.stockEnergie = 0;
 	}
 
-
 	public String getNom() {
 		return nom;
 	}
-
 
 	public int getDps() {
 		return dps;
 	}
 
-
 	public void setDps(int dps) {
 		this.dps = dps;
 	}
-
 
 	public int getVie() {
 		return vie;
 	}
 
-
 	public void setVie(int vie) {
 		this.vie = vie;
 	}
-
 
 	public List<Batiment> getBatimentsJoueur() {
 		return batimentsJoueur;
 	}
 	
-	
-
-
 	public void gagnerBatimentsJoueur(Batiment batiment) {
 		this.batimentsJoueur.add(batiment);
 	}
@@ -127,6 +118,5 @@ public class Joueur {
 		System.out.println("+++++++++++++++++++++++++++++++");
 		
 	}
-	
 	
 }

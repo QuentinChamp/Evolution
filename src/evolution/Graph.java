@@ -100,9 +100,8 @@ public class Graph {
 		System.out.println("/________/           \\______|__|_|          \\________\\ ");
 		
 	}
-	
-	 
-	  public static void cyril() { 
+		 
+	public static void cyril() { 
 	 
 	System.out.println("      / _)( \\/ )(  ,) (  )(  )  "); 
 	System.out.println("     ( (_  \\  /  )  \\  )(  )(__ "); 
@@ -117,6 +116,7 @@ public class Graph {
 	System.out.println("      \\___\\\\__/ (___)(_)\\_) (__) (__)(_)\\_)"); 
 	 
 	  } 
+<<<<<<< HEAD
 	   public static void poney(){
 		System.out.println("NNNNNNNNNNNNNNNNNNNXkkXNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
 		System.out.println("NNNNNNNN0OXNNNNNNNXo..lKNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
@@ -172,4 +172,7 @@ public class Graph {
 	   
 	
 
+=======
+	   	
+>>>>>>> 6c82c587b4a49ec087b424b41ecefd9143fe6db5
 }
