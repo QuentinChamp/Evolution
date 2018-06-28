@@ -283,9 +283,11 @@ public class MainClass {
 		System.out.println("?");
 		try {Thread.sleep(2000);}catch (Exception e){}
 		System.out.println("Un jeu developpé par la team JAVA");
+		Graph.cyril();
 		try {Thread.sleep(2000);}catch (Exception e){}
 		System.out.println("Avec la participation de Ricard PREDATOR !!!");
 		System.out.println("\n\n\n\n");
+		
 	}
 	
 	public static void title() {

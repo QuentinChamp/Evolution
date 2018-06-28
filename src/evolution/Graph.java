@@ -55,6 +55,26 @@ public class Graph {
 		System.out.println("");
 		System.out.println("");
 	}
+<<<<<<< HEAD
+=======
+
+	public static void cyril() {
+
+System.out.println("		  / _)( \\/ )(  ,) (  )(  )  ");
+System.out.println("		 ( (_  \\  /  )  \\  )(  )(__ ");
+System.out.println("		  \\__)(__/  (_)\\_)(__)(____)");
+System.out.println("		   __  _  _  __  __    __     __  _  _  __  __  ___ ");
+System.out.println("		  / _)( )( )(  )(  )  (  )   (  )( )( )(  \\/  )(  _)");
+System.out.println("		 ( (/\\ )()(  )(  )(__  )(__  /__\\ )()(  )    (  ) _)");
+System.out.println("		  \\__/ \\__/ (__)(____)(____)(_)(_)\\__/ (_/\\/\\_)(___)");
+System.out.println("		   __  _  _  ___  _  _  ____  __  _  _ ");
+System.out.println("		  /  \\( )( )(  _)( \\( )(_  _)(  )( \\( )");
+System.out.println("		 ( () ))()(  ) _) )  (   )(   )(  )  ( ");
+System.out.println("		  \\___\\\\__/ (___)(_)\\_) (__) (__)(_)\\_)");
+
+	}
+	
+>>>>>>> e879837d8d2745edcfeefec5de206846bed2e116
 	
 }
 
