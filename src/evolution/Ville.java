@@ -37,8 +37,7 @@ public class Ville {
 		this.nom = nom;
 	}
 	
-	public ArrayList<Batiment> getBatiment()
-	{
+	public ArrayList<Batiment> getBatiment() {
 		return this.batiments;
 	}
 	

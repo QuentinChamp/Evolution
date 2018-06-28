@@ -6,15 +6,14 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		
-
 		boolean win = true;
 		boolean jouer = true;
 		Graph.aci();
 		intro();
-		Graph.evolutionIntro2();
+		
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Nom du joueur?");
+		System.out.println("Nom du joueur ?");
 		String pseudo = sc.nextLine();
 		
 		System.out.println("Bonjour " + pseudo);
@@ -41,6 +40,7 @@ public class MainClass {
 				break;
 			
 			}
+			
 		}
 		sc.close();
 	}
@@ -48,6 +48,7 @@ public class MainClass {
 	private static byte menu(Scanner sc) {
 		
 		byte choix = 0;
+		
 		do{
 		System.out.println("Que voulez-vous faire ?");
 		System.out.println("1- Attaquer");
@@ -56,10 +57,10 @@ public class MainClass {
 		
 			choix = sc.nextByte();
 			if(choix<1 || choix>3)
-				System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 1 et 3 ! ï¿½_ï¿½");
-		}while(choix<1 || choix>3);
-		return choix;
+				System.out.println("Votre reponse doit etre comprise entre 1 et 3 ! ");
+		} while(choix<1 || choix>3);
 		
+		return choix;
 		
 	}
 
@@ -75,7 +76,7 @@ public class MainClass {
 			choix = sc.nextByte();
 
 			if(choix<1 || choix>3)
-				System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 1 et 3 ! ï¿½_ï¿½");
+				System.out.println("Votre reponse doit etre comprise entre 1 et 3 ! ");
 		}while(choix<1 || choix>3);
 		
 		if (choix == 1)
@@ -105,7 +106,7 @@ public class MainClass {
 
 				choix = sc.nextByte();
 				if(choix<0 || choix>=secteurs.length)
-					System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 0 et "+(secteurs.length-1)+" ! ï¿½_ï¿½");
+					System.out.println("Votre reponse doit etre comprise entre 0 et "+(secteurs.length-1)+" ! ");
 			}while(choix<0 || choix>=secteurs.length);
 			secteur = choix;
 
@@ -116,18 +117,18 @@ public class MainClass {
 
 				choix = sc.nextByte();
 				if(choix<0 || choix>=secteurs[secteur].getVille().length)
-					System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 0 et "+(secteurs[secteur].getVille().length-1)+" ! ï¿½_ï¿½");
+					System.out.println("Votre reponse doit etre comprise entre 0 et "+(secteurs[secteur].getVille().length-1)+" ! ");
 			}while(choix<0 || choix>=secteurs[secteur].getVille().length);
 			ville = choix;
 
 			do{
-				System.out.println("Choisissez un bï¿½timent ï¿½ achetï¿½:");
+				System.out.println("Choisissez un batiment a acheter :");
 				for(int i=0; i<secteurs[secteur].getVille()[ville].getBatiment().size();i++)
 					System.out.println(i+"- "+secteurs[secteur].getVille()[ville].getBatiment().get(i).getNom());
 
 				choix = sc.nextByte();
 				if(choix<0 || choix>=secteurs[secteur].getVille()[ville].getBatiment().size())
-					System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 0 et "+(secteurs[secteur].getVille()[ville].getBatiment().size()-1)+" ! ï¿½_ï¿½");
+					System.out.println("Votre reponse doit etre comprise entre 0 et "+(secteurs[secteur].getVille()[ville].getBatiment().size()-1)+" ! ");
 			}while(choix<0 || choix>=secteurs[secteur].getVille()[ville].getBatiment().size());
 			batiment = choix;
 			
@@ -151,35 +152,39 @@ public class MainClass {
 
 		while(verif==false) {
 			do{
-				System.out.println("Choisissez un secteur ï¿½ attaquer :");
+				System.out.println("Choisissez un secteur a attaquer :");
 				for(int i=0; i<secteurs.length;i++)
 					System.out.println(i+"- "+secteurs[i].getNom());
 
 				choix = sc.nextByte();
 				if(choix<0 || choix>=secteurs.length)
-					System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 0 et "+(secteurs.length-1)+" ! ï¿½_ï¿½");
+					System.out.println("Votre reponse doit etre comprise entre 0 et "+(secteurs.length-1)+" ! ");
 			}while(choix<0 || choix>=secteurs.length);
 			secteur = choix;
+			if (secteur == 0)
+				Graph.villeGraph();
+			else if (secteur == 1)
+				Graph.poney();
 
 			do{
-				System.out.println("Choisissez une ville ï¿½ attaquer :");
+				System.out.println("Choisissez une ville a attaquer :");
 				for(int i=0; i<secteurs[secteur].getVille().length;i++)
 					System.out.println(i+"- "+secteurs[secteur].getVille()[i].getNom());
 
 				choix = sc.nextByte();
 				if(choix<0 || choix>=secteurs[secteur].getVille().length)
-					System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 0 et "+(secteurs[secteur].getVille().length-1)+" ! ï¿½_ï¿½");
+					System.out.println("Votre reponse doit etre comprise entre 0 et "+(secteurs[secteur].getVille().length-1)+" ! ");
 			}while(choix<0 || choix>=secteurs[secteur].getVille().length);
 			ville = choix;
 
 			do{
-				System.out.println("Choisissez un bï¿½timent ï¿½ attaquer :");
+				System.out.println("Choisissez un batiment a attaquer :");
 				for(int i=0; i<secteurs[secteur].getVille()[ville].getBatiment().size();i++)
 					System.out.println(i+"- "+secteurs[secteur].getVille()[ville].getBatiment().get(i).getNom());
 
 				choix = sc.nextByte();
 				if(choix<0 || choix>=secteurs[secteur].getVille()[ville].getBatiment().size())
-					System.out.println("Votre rï¿½ponse doit ï¿½tre comprise entre 0 et "+(secteurs[secteur].getVille()[ville].getBatiment().size()-1)+" ! ï¿½_ï¿½");
+					System.out.println("Votre reponse doit etre comprise entre 0 et "+(secteurs[secteur].getVille()[ville].getBatiment().size()-1)+" ! ");
 			}while(choix<0 || choix>=secteurs[secteur].getVille()[ville].getBatiment().size());
 			batiment = choix;
 			
@@ -276,26 +281,11 @@ public class MainClass {
 		System.out.println("...");
 		try {Thread.sleep(3000);}catch (Exception e){}
 		Graph.evolutionIntro() ;
-		try {Thread.sleep(3000);}catch (Exception e){}
-		Graph.villeGraph();
-		System.out.println("?");
 		try {Thread.sleep(2000);}catch (Exception e){}
-		System.out.println("Un jeu developpé par la team JAVA");
+		System.out.println("Un jeu developpe par la team JAVA\n");
+		try {Thread.sleep(2000);}catch (Exception e){}
 		Graph.cyril();
-		try {Thread.sleep(2000);}catch (Exception e){}
-		System.out.println("Avec la participation de Ricard PREDATOR !!!");
 		System.out.println("\n\n\n\n");
-	}
-	
-	public static void title() {
-		System.out.println("       ____    ____              ____               _______     ___  ______________   _________       ");
-		System.out.println("      /    \\  /    \\            /    \\             |       \\   |   | |             | |   ______|  ");
-		System.out.println("     /   __ \\/ __   \\          /      \\            |    o   |  |   | |____     ____| |   |         ");
-		System.out.println("    /   /  \\  /  \\   \\        /   /\\   \\           |        /  |   |      |    |     |   |____   ");
-		System.out.println("   /   /    \\/    \\   \\      /   /__\\   \\          |        \\  |   |      |    |     |   ____|  ");
-		System.out.println("  /   /            \\   \\    /    ____    \\         |    O    | |   |      |    |     |   |         ");
-		System.out.println(" /   /              \\   \\  /   /      \\   \\        |         | |   |      |    |     |   |______  ");
-		System.out.println("/___/                \\___\\/___/        \\___\\       |________/  |___|      |____|     |_________|  ");
 	}
 
 }

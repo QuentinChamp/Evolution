@@ -88,9 +88,9 @@ public class Batiment {
 			dps = random(0, joueur.getDps());
 			mechant.setVie(mechant.getVie() - dps);
 			if(mechant.getVie()>0)
-				System.out.println("Vous faites "+dps+" de dégats à "+mechant.getNom()+", il lui reste "+mechant.getVie()+".");
+				System.out.println("Vous faites "+dps+" de degats à "+mechant.getNom()+", il lui reste "+mechant.getVie()+".");
 			else
-				System.out.println("Vous faites "+dps+" de dégats à "+mechant.getNom()+", il est KO.");
+				System.out.println("Vous faites "+dps+" de degats à "+mechant.getNom()+", il est KO.");
 			if(mechant.getVie()<=0)
 			{
 				win = true;
@@ -104,11 +104,11 @@ public class Batiment {
 				joueur.setVie(0);
 			
 			if(joueur.getVie()>0)
-				System.out.println(mechant.getNom()+" vous fait "+dps+" de dégats, il vous reste "+joueur.getVie()+".");
+				System.out.println(mechant.getNom()+" vous fait "+dps+" de degats, il vous reste "+joueur.getVie()+".");
 			else
 			{
-				System.out.println(mechant.getNom()+" vous fait "+dps+" de dégats, vous êtes KO.");
-				MainClass.title();
+				System.out.println(mechant.getNom()+" vous fait "+dps+" de degats, vous etes KO.");
+				Graph.title();
 			}
 			if(joueur.getVie()<=0)
 				win = false;
@@ -153,11 +153,11 @@ public class Batiment {
 	}
 	
 	public void victoire() {
-		System.out.println("Victoire ! Tu as réussi à défendre "+this.nom+" !\n\n");
+		System.out.println("Victoire ! Tu as reussi à defendre "+this.nom+" !\n\n");
 	}
 	
 	public void defaite() {
-		System.out.println("Defaite ! Tu as échoué dans la conquête de "+this.nom+" !\n\n");
+		System.out.println("Defaite ! Tu as echoue dans la conquete de "+this.nom+" !\n\n");
 	}
 	
 	public int random(int min, int max) {

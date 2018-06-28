@@ -2,10 +2,6 @@ package evolution;
 
 public class Graph {
 
-	public static void Graph() {
-
-	}
-	
 	public static void villeGraph() {
 		System.out.println("                                                                       ||    ");
 		System.out.println("                                                                    __ ^^ __ ");
@@ -47,9 +43,9 @@ public class Graph {
 		System.out.println("____________________________________________________________________________");
 
 	}
-	
+
 	public static void evolutionIntro() {
-		
+
 		System.out.println("EEEEEEEEEEEEEEEEEEEEEE                                        lllllll 	                       tttt            iiii                   	          ");
 		System.out.println("E::::::::::::::::::::E                                        l:::::l 	                    ttt:::t           i::::i                  	         ");
 		System.out.println("E::::::::::::::::::::E                                        l:::::l                       t:::::t            iiii                   	     ");
@@ -68,16 +64,12 @@ public class Graph {
 		System.out.println("EEEEEEEEEEEEEEEEEEEEEE           vvv            ooooooooooo   llllllll    uuuuuuuu  uuuu        ttttttttttt  iiiiiiii   ooooooooooo   	nnnnnn    nnnnnn");
 		System.out.println("");
 		System.out.println("");
-		
-	}
 
-	public static void evolutionIntro2() {
-		System.out.println("guillaume le noob");
 	}
-
 	
+
 	public static void aci() {
-		
+
 		System.out.println("                   ________________                    ");
 		System.out.println("                  /                \\                   ");
 		System.out.println("                 /                  \\                  ");
@@ -98,9 +90,9 @@ public class Graph {
 		System.out.println("  /        /       \\     \\__|  |_         \\        \\   ");
 		System.out.println(" /        /         \\       |  | |         \\        \\  ");
 		System.out.println("/________/           \\______|__|_|          \\________\\ ");
-		
+
 	}
-		 
+
 	public static void cyril() { 
 	 
 	System.out.println("      / _)( \\/ )(  ,) (  )(  )  "); 
@@ -117,7 +109,8 @@ public class Graph {
 	 
 	  } 
 
-	   public static void poney(){
+	public static void poney() {
+
 		System.out.println("NNNNNNNNNNNNNNNNNNNXkkXNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
 		System.out.println("NNNNNNNN0OXNNNNNNNXo..lKNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
 		System.out.println("NNNNNNNO'.lKNNNNNXo.   cKNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
@@ -168,6 +161,18 @@ public class Graph {
 		System.out.println("NNNNNNNNNNNNNNNNNNNNNNNNNNNXOoloOXWO,        :0NNNNNNNNNNKOc.         'kNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
 		System.out.println("NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNXkolccclokKNNNNNNNNNNNNNXOdc;'.',;oONNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
 		System.out.println("NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNXKKXNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
-	   }
+	   
+	}
+
+	public static void title() {
+		System.out.println("       ____    ____              ____               _______     ___  ______________   _________       ");
+		System.out.println("      /    \\  /    \\            /    \\             |       \\   |   | |             | |   ______|  ");
+		System.out.println("     /   __ \\/ __   \\          /      \\            |    o   |  |   | |____     ____| |   |         ");
+		System.out.println("    /   /  \\  /  \\   \\        /   /\\   \\           |        /  |   |      |    |     |   |____   ");
+		System.out.println("   /   /    \\/    \\   \\      /   /__\\   \\          |        \\  |   |      |    |     |   ____|  ");
+		System.out.println("  /   /            \\   \\    /    ____    \\         |    O    | |   |      |    |     |   |         ");
+		System.out.println(" /   /              \\   \\  /   /      \\   \\        |         | |   |      |    |     |   |______  ");
+		System.out.println("/___/                \\___\\/___/        \\___\\       |________/  |___|      |____|     |_________|  ");
+	}
 
 }
