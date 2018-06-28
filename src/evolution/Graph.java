@@ -95,9 +95,8 @@ public class Graph {
 		System.out.println("/________/           \\______|__|_|          \\________\\ ");
 		
 	}
-	
-	 
-	  public static void cyril() { 
+		 
+	public static void cyril() { 
 	 
 	System.out.println("      / _)( \\/ )(  ,) (  )(  )  "); 
 	System.out.println("     ( (_  \\  /  )  \\  )(  )(__ "); 
@@ -112,7 +111,5 @@ public class Graph {
 	System.out.println("      \\___\\\\__/ (___)(_)\\_) (__) (__)(_)\\_)"); 
 	 
 	  } 
-	   
-	   
-	
+	   	
 }

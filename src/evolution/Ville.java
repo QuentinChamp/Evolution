@@ -42,7 +42,4 @@ public class Ville {
 		return this.batiments;
 	}
 	
-	
-
-	
 }

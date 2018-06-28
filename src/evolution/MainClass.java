@@ -40,10 +40,7 @@ public class MainClass {
 				break;
 			
 			}
-			
-			
 		}
-		
 		sc.close();
 	}
 
@@ -198,7 +195,6 @@ public class MainClass {
 		joueur.augmenterStock();
 		return secteurs[secteur].getVille()[ville].getBatiment().get(batiment);
 	}
-
 	
 	public static Secteur[] genererSecteurs() {
 		int totalSecteurs =2;
@@ -283,7 +279,8 @@ public class MainClass {
 		Graph.villeGraph();
 		System.out.println("?");
 		try {Thread.sleep(2000);}catch (Exception e){}
-		System.out.println("Un jeu developpï¿½ par la team JAVA");
+		System.out.println("Un jeu developpé par la team JAVA");
+		Graph.cyril();
 		try {Thread.sleep(2000);}catch (Exception e){}
 		System.out.println("Avec la participation de Ricard PREDATOR !!!");
 		System.out.println("\n\n\n\n");
@@ -299,6 +296,5 @@ public class MainClass {
 		System.out.println(" /   /              \\   \\  /   /      \\   \\        |         | |   |      |    |     |   |______  ");
 		System.out.println("/___/                \\___\\/___/        \\___\\       |________/  |___|      |____|     |_________|  ");
 	}
-
 
 }
