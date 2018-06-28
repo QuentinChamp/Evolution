@@ -3,35 +3,47 @@ package evolution;
 public class Graph {
 
 	public static void Graph() {
-		System.out.println("                  O                                         ");
-		System.out.println("                  |                                         ");
-		System.out.println("        __________|_________                               ");
-		System.out.println("       |                    |                               ");
-		System.out.println("       |     _         _    |                               ");
-		System.out.println("       |    |_|       |_|   |                               ");
-		System.out.println("       |     _         _    |                               ");
-		System.out.println("       |    |_|       |_|   |                               ");
-		System.out.println("       |     _         _    |____||____                     ");
-		System.out.println("       |    |_|       |_|   |          |                    ");
-		System.out.println("       |     _         _    |   o   o  |                  /|");
-		System.out.println("       |    |_|       |_|   |   o   o  |                 /| ");
-		System.out.println("       |     _         _    |   o   o  |                /|  ");
-		System.out.println("       |    |_|       |_|   |   o   o  |               /|   ");
-		System.out.println("       |     _         _    |   o   o  |              /|    ");
-		System.out.println("       |    |_|       |_|   |   o   o  |             /|     ");
-		System.out.println("       |     _         _    |   o   o  |            /|      ");
-		System.out.println("       |    |_|       |_|   |   o   o  |           /|       ");
-		System.out.println("       |     _         _    |   o   o  |          /|        ");
-		System.out.println("       |    |_|       |_|   |   o   o  |         /|         ");
-		System.out.println("       |     _         _    |   o   o  |        /|          ");
-		System.out.println("       |    |_|       |_|   |   o   o  |       /|           ");
-		System.out.println("       |     _         _    |   o   o  |      /|            ");
-		System.out.println("       |    |_|       |_|   |   o   o  |     /|             ");
-		System.out.println("       |         ___        |   o   o  |    /|              ");
-		System.out.println("       |        |   |       |__________|   /|               ");
-		System.out.println("       |________|___|_______|                               ");
-		
-		
+	}
+	
+	public static void villeGraph() {
+		System.out.println("                                                                       ||    ");
+		System.out.println("                                                                    __ ^^ __ ");
+		System.out.println("                                                                   (  ||||  )");
+		System.out.println("               __________________                                  (  ||||  )");
+		System.out.println("              ||||||||||||||||||||                                 (  ||||  )");
+		System.out.println("          O   ||||||||||||||||||||            ________________________|||| )");
+		System.out.println("          |   ||||||||||||||||||||           |________________________||||||");
+		System.out.println(" _________|___||||||||||||||||||||           |________________________||||||");
+		System.out.println("|                    |||||||||||||           |________________________||||||");
+		System.out.println("|     _         _    |||||||||||||___________|________________________||||||");
+		System.out.println("|    |_|       |_|   |||||||||||||||||||||||||________________________||||||");
+		System.out.println("|     _         _    |||||||||||||||||||||||||________________________||||||");
+		System.out.println("|    |_|       |_|   |||||||||||||||||||||||||________________________||||||");
+		System.out.println("|     _         _    |||||||||||||||||||||||||________________________||||||");
+		System.out.println("|    |_|       |_|   |          ||||||||||||||________________________||||||");
+		System.out.println("|     _         _    |   o   o  ||||||||||||||________________________||||||");
+		System.out.println("|    |_|       |_|   |   o   o  ||||||||||||||________________________||||||");
+		System.out.println("|     _         _    |   o   o  ||||||||||||||________________________||||||");
+		System.out.println("|    |_|       |_|   |   o   o  ||||||||||||||________________________||||||");
+		System.out.println("|     _         _    |   o   o  ||||||||||||||________________________||||||");
+		System.out.println("|    |_|       |_|   |   o   o  ||||||||||||||________________________||||||");
+		System.out.println("|     _         _    |   o   o  ||||||||||||||________________________||||||");
+		System.out.println("|    |_|       |_|   |   o   o  ||||||||||||||________________________||||||");
+		System.out.println("|     _         _    |   o   o  ||||||||||||||________________________||||||");
+		System.out.println("|    |_|       |_|   |   o   o  ||||||||||||||________________________||||||");
+		System.out.println("|     _         _    |   o   o  ||||||||||||||________________________||||||");
+		System.out.println("|    |_|       |_|   |   o   o  ||||||||||||||________________________||||||");
+		System.out.println("|     _         _    |   o   o  ||||||||||||||________________________||||||");
+		System.out.println("|    |_|       |_|   |   o   o  ||||||||||||||________________________||||||");
+		System.out.println("|         ___        |   o   o  ||||||||||||||________________________||||||");
+		System.out.println("|        |   |       |     _    ||||||||||||||________________________||||||");
+		System.out.println("|        |___|       |    | |   ||||||||||||||________________________||||||");
+		System.out.println("____________________________________________________________________________");
+		System.out.println("| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | ");
+		System.out.println("----------------------------------------------------------------------------");
+		System.out.println("| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | ");
+		System.out.println("                                                                            ");
+		System.out.println("____________________________________________________________________________");
 	}
 	
 	public static void evolutionIntro() {
