@@ -1,8 +1,5 @@
 package evolution;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Mechant {
 	
 	private byte compteur=0;

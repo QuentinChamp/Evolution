@@ -27,6 +27,11 @@ public class Batiment {
 	}
 
 	
+	public byte getId() {
+		return id;
+	}
+
+
 	public String getEtat() {
 		return etat;
 	}
@@ -86,12 +91,7 @@ public class Batiment {
 		this.ressource = ressource;
 	}
 
-
-	public void setId(byte id) {
-		this.id = id;
-	}
-
-
+	
 	public boolean attaquer(Joueur joueur)
 	{
 		int dps=0;

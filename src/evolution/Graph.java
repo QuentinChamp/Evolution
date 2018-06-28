@@ -3,6 +3,7 @@ package evolution;
 public class Graph {
 
 	public static void Graph() {
+		
 		System.out.println("                  O                                         ");
 		System.out.println("                  |                                         ");
 		System.out.println("        __________|_________                               ");
@@ -31,7 +32,6 @@ public class Graph {
 		System.out.println("       |        |   |       |__________|   /|               ");
 		System.out.println("       |________|___|_______|                               ");
 		
-		
 	}
 	
 	public static void evolutionIntro() {
@@ -54,5 +54,51 @@ public class Graph {
 		System.out.println("EEEEEEEEEEEEEEEEEEEEEE           vvv            ooooooooooo   llllllll    uuuuuuuu  uuuu        ttttttttttt  iiiiiiii   ooooooooooo   	nnnnnn    nnnnnn");
 		System.out.println("");
 		System.out.println("");
+		
 	}
+	
+	public static void aci() {
+		
+		System.out.println("                   ________________                    ");
+		System.out.println("                  /                \\                   ");
+		System.out.println("                 /                  \\                  ");
+		System.out.println("                /                    \\                 ");
+		System.out.println("               /        ______        \\                ");
+		System.out.println("              /        /      \\        \\               ");
+		System.out.println("             /        /        \\        \\              ");
+		System.out.println("            /        /          \\        \\             ");
+		System.out.println("           /        /            \\        \\            ");
+		System.out.println("          /        /______________\\        \\           ");
+		System.out.println("         /                                  \\          ");
+		System.out.println("        /             ___________            \\         ");
+		System.out.println("       /         ____/           |___         \\        ");
+		System.out.println("      /        /    /     ___/\\__|    \\        \\       ");
+		System.out.println("     /        /    /     /   \\/        \\        \\      ");
+		System.out.println("    /        /    |     |   |  |        \\        \\     ");
+		System.out.println("   /        /     |     |   |  |         \\        \\    ");
+		System.out.println("  /        /       \\     \\__|  |_         \\        \\   ");
+		System.out.println(" /        /         \\       |  | |         \\        \\  ");
+		System.out.println("/________/           \\______|__|_|          \\________\\ ");
+		
+	}
+	
+	 
+	  public static void cyril() { 
+	 
+	System.out.println("      / _)( \\/ )(  ,) (  )(  )  "); 
+	System.out.println("     ( (_  \\  /  )  \\  )(  )(__ "); 
+	System.out.println("      \\__)(__/  (_)\\_)(__)(____)"); 
+	System.out.println("       __  _  _  __  __    __     __  _  _  __  __  ___ "); 
+	System.out.println("      / _)( )( )(  )(  )  (  )   (  )( )( )(  \\/  )(  _)"); 
+	System.out.println("     ( (/\\ )()(  )(  )(__  )(__  /__\\ )()(  )    (  ) _)"); 
+	System.out.println("      \\__/ \\__/ (__)(____)(____)(_)(_)\\__/ (_/\\/\\_)(___)"); 
+	System.out.println("       __  _  _  ___  _  _  ____  __  _  _ "); 
+	System.out.println("      /  \\( )( )(  _)( \\( )(_  _)(  )( \\( )"); 
+	System.out.println("     ( () ))()(  ) _) )  (   )(   )(  )  ( "); 
+	System.out.println("      \\___\\\\__/ (___)(_)\\_) (__) (__)(_)\\_)"); 
+	 
+	  } 
+	   
+	   
+	
 }
