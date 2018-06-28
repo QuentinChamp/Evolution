@@ -280,6 +280,8 @@ public class MainClass {
 		System.out.println("...");
 		try {Thread.sleep(3000);}catch (Exception e){}
 		Graph.evolutionIntro() ;
+		try {Thread.sleep(3000);}catch (Exception e){}
+		Graph.villeGraph();
 		System.out.println("?");
 		try {Thread.sleep(2000);}catch (Exception e){}
 		System.out.println("Un jeu developp� par la team JAVA");
