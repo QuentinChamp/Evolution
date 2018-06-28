@@ -11,6 +11,7 @@ public class MainClass {
 		boolean jouer = true;
 		
 		intro();
+		Graph.evolutionIntro2();
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Nom du joueur?");

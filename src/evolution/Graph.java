@@ -55,4 +55,7 @@ public class Graph {
 		System.out.println("");
 		System.out.println("");
 	}
+	public static void evolutionIntro2() {
+		System.out.println("guillaume le noob");
+	}
 }
