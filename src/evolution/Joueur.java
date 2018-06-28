@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Joueur {
-
+	
 	private String nom;
 	private int dps; 
 	private int vie;
@@ -14,10 +14,10 @@ public class Joueur {
 	private int stockHabitant;
 	private int stockPierre;
 	private int stockEnergie;
-
+	
 	public Joueur(String nom, int dps, int vie) {
 		super();
-
+		
 		this.nom = nom;
 		this.dps = dps;
 		this.vie = vie;
@@ -56,14 +56,14 @@ public class Joueur {
 	public List<Batiment> getBatimentsJoueur() {
 		return batimentsJoueur;
 	}
-
-
+	
+	
 
 
 	public void gagnerBatimentsJoueur(Batiment batiment) {
 		this.batimentsJoueur.add(batiment);
 	}
-
+	
 	public void perdreBatimentsJoueur(Batiment batiment) {
 		this.batimentsJoueur.remove(batiment);
 	}
@@ -75,35 +75,35 @@ public class Joueur {
 	public void setVillesJoueur(List<Ville> villesJoueur) {
 		this.villesJoueur = villesJoueur;
 	}
-
+	
 	public void affichageBatimentJoueur() {
 		for (Batiment a : this.batimentsJoueur) {
-
+			
 			System.out.println(a.getNom());
 		}
 	}
-
+	
 	public void soin() {
-
+		
 		if(this.stockNourriture>10)
 		{
-			this.stockNourriture -= 75;
-			setVie(getVie()+30);
-			System.out.println("Votre vie est de = " + vie);
+		this.stockNourriture -= 10;
+		setVie(getVie()+50);
+		System.out.println("Votre vie est de = " + vie);
 		}
 		else
 			System.out.println("Vous n'avez pas assez de ressources");
 	}
-
+	
 	public void augmenterStock() {
-
+				
 		for (int i = 0 ; i <getBatimentsJoueur().size() ; i++)
 		{
 			switch(getBatimentsJoueur().get(i).getRessource().getNom())
 			{
 			case "NOURRITURE" :
 				this.stockNourriture += getBatimentsJoueur().get(i).getStock();
-
+				
 				break;
 			case "HABITANT" :
 				this.stockHabitant += getBatimentsJoueur().get(i).getStock();
@@ -117,15 +117,16 @@ public class Joueur {
 			default :
 				break;
 			}	
+			System.out.println("+++++++++++++++++++++++++++++++");
+			System.out.println("Nourriture = " + this.stockNourriture);
+			System.out.println("Habitant = " + this.stockHabitant);
+			System.out.println("Pierre = " + this.stockPierre);
+			System.out.println("Ennergie = " + this.stockEnergie);
+			System.out.println("+++++++++++++++++++++++++++++++");
 		}
-		System.out.println("+++++++++++++++++++++++++++++++");
-		System.out.println("Nourriture = " + this.stockNourriture);
-		System.out.println("Habitant = " + this.stockHabitant);
-		System.out.println("Pierre = " + this.stockPierre);
-		System.out.println("Ennergie = " + this.stockEnergie);
-		System.out.println("+++++++++++++++++++++++++++++++");		
-
+		
+		
 	}
-
-
+	
+	
 }
