@@ -169,7 +169,7 @@ public class Batiment {
 	public void genererMechants(List<Mechant> mechants) {
 		Mechant kevin = new Mechant("Flash sensible", 24, 1);
 		Mechant thibault = new Mechant("Papy", 5, 31);
-		Mechant yves = new Mechant("Monsieur le juge", 50, 50);
+		Mechant yves = new Mechant("Monsieur le juge", 30, 30);
 		Mechant paola = new Mechant("Lapin", 0, 1);
 		
 		mechants.add(kevin);

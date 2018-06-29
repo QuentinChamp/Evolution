@@ -47,6 +47,38 @@ public class Joueur {
 		this.vie = vie;
 	}
 
+	public int getStockNourriture() {
+		return stockNourriture;
+	}
+
+	public void setStockNourriture(int stockNourriture) {
+		this.stockNourriture = stockNourriture;
+	}
+
+	public int getStockHabitant() {
+		return stockHabitant;
+	}
+
+	public void setStockHabitant(int stockHabitant) {
+		this.stockHabitant = stockHabitant;
+	}
+
+	public int getStockPierre() {
+		return stockPierre;
+	}
+
+	public void setStockPierre(int stockPierre) {
+		this.stockPierre = stockPierre;
+	}
+
+	public int getStockEnergie() {
+		return stockEnergie;
+	}
+
+	public void setStockEnergie(int stockEnergie) {
+		this.stockEnergie = stockEnergie;
+	}
+
 	public List<Batiment> getBatimentsJoueur() {
 		return batimentsJoueur;
 	}
